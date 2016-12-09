@@ -1,0 +1,42 @@
+spawn ssh-copy-id root@192.168.60.129
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+
+[42;37m This system partition status is:[0m
+
+Disk /dev/sda: 21.5 GB, 21474836480 bytes
+255 heads, 63 sectors/track, 2610 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x000590b3
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1          39      307200   83  Linux
+Partition 1 does not end on cylinder boundary.
+/dev/sda2              39        2350    18566144   83  Linux
+/dev/sda3            2350        2611     2097152   82  Linux swap / Solaris
+[42;37m The Information of RootfileType:[0m
+ext4
+[42;37m The Information of Selinux:[0m
+Enforcing
+[42;37m The Information of  Kernel:[0m
+2.6.32-642.el6.x86_64
+[42;37m dmesg information was obtained from the RHEL6 of the tail 10[0m
+8021q: adding VLAN 0 to HW filter on device eth1
+e1000: eth1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+eth1: no IPv6 routers present
+[1834]: VMCI: Updating context from (ID=0x9b7fe13e) to (ID=0x9b7fe13e) on event (type=0).
+ADDRCONF(NETDEV_UP): eth1: link is not ready
+8021q: adding VLAN 0 to HW filter on device eth1
+e1000: eth1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+eth1: no IPv6 routers present
+[42;37m Set R6 language to English[0m
+Set R6 language to en_US.utf8 success
+[42;37m The service start successful!:[0m
+Starting httpd: 
+[42;37m The service start stauts:[0m
+httpd (pid  22210) is running...

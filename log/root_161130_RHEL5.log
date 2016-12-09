@@ -1,0 +1,49 @@
+spawn ssh-copy-id root@192.168.60.130
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+
+[42;37m This system partition status is:[0m
+
+Disk /dev/sda: 21.4 GB, 21474836480 bytes
+255 heads, 63 sectors/track, 2610 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1          13      104391   83  Linux
+/dev/sda2              14        2610    20860402+  8e  Linux LVM
+
+Disk /dev/dm-0: 19.2 GB, 19226689536 bytes
+255 heads, 63 sectors/track, 2337 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+
+
+Disk /dev/dm-1: 2113 MB, 2113929216 bytes
+255 heads, 63 sectors/track, 257 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+
+Disk /dev/dm-0 doesn't contain a valid partition table
+Disk /dev/dm-1 doesn't contain a valid partition table
+[42;37m The Information of RootfileType:[0m
+ext3
+[42;37m The Information of Selinux:[0m
+enabled
+[42;37m The Information of  Kernel:[0m
+2.6.18-398.el5
+[42;37m dmesg information was obtained from the RHEL6 of the tail 10[0m
+e1000: eth0 NIC Link is Down
+e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+e1000: eth0 NIC Link is Down
+e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+e1000: eth0 NIC Link is Down
+e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+e1000: eth0 NIC Link is Down
+e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+e1000: eth0 NIC Link is Down
+e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[42;37m Set R5 language to English[0m
+Set R5 language to en_US.utf8 success
+[42;37m The service start successful!:[0m
+Starting httpd: 
+[42;37m The service start stauts:[0m
+httpd (pid  31809) is running...

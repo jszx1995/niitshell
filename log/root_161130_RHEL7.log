@@ -1,0 +1,77 @@
+[42;37m This system partition status is:[0m
+
+Disk /dev/sda: 32.2 GB, 32212254720 bytes, 62914560 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0x0008800f
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *        2048     1026047      512000   83  Linux
+/dev/sda2         1026048    62914559    30944256   8e  Linux LVM
+
+Disk /dev/mapper/rhel-root: 29.5 GB, 29490151424 bytes, 57597952 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mapper/rhel-swap: 2147 MB, 2147483648 bytes, 4194304 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+[42;37m The Information of RootfileType:[0m
+xfs
+[42;37m The Information of Selinux:[0m
+Enforcing
+[42;37m The Information of  Kernel:[0m
+3.10.0-327.el7.x86_64
+[42;37m dmesg is:[0m
+[195868.708475] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[197490.390521] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[197669.572270] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[199291.588422] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[199471.580395] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[201092.603206] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[201273.452506] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[202894.178150] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[203074.014539] SELinux: initialized (dev tmpfs, type tmpfs), uses transition SIDs
+[204021.668346] blk_update_request: I/O error, dev fd0, sector 0
+[42;37m Set R7 language to English[0m
+Set R7 language to en_US.utf8 success
+[42;37m The service start successful!:[0m
+Redirecting to /bin/systemctl start  httpd.service
+[42;37m The service start stauts:[0m
+Redirecting to /bin/systemctl status  httpd.service
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/etc/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Wed 2016-11-23 08:46:33 CST; 1 weeks 0 days ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+  Process: 44662 ExecReload=/usr/sbin/httpd $OPTIONS -k graceful (code=exited, status=0/SUCCESS)
+  Process: 29641 ExecStartPre=/usr/libexec/ipa/ipa-httpd-kdcproxy (code=exited, status=0/SUCCESS)
+ Main PID: 29707 (httpd)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+   CGroup: /system.slice/httpd.service
+           ├─29707 /usr/sbin/httpd -DFOREGROUND
+           ├─29709 /usr/libexec/nss_pcache 163843 off /etc/httpd/alias
+           ├─29712 /usr/libexec/crlhelper 196612 29707 /etc/httpd/alias
+           ├─44680 /usr/sbin/httpd -DFOREGROUND
+           ├─44682 /usr/sbin/httpd -DFOREGROUND
+           ├─44683 /usr/sbin/httpd -DFOREGROUND
+           ├─44684 /usr/sbin/httpd -DFOREGROUND
+           ├─44685 /usr/sbin/httpd -DFOREGROUND
+           └─44686 /usr/sbin/httpd -DFOREGROUND
+
+Nov 27 14:14:10 localhost.localdomain httpd[44662]: AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
+Nov 27 14:14:10 localhost.localdomain systemd[1]: Reloaded The Apache HTTP Server.
+Nov 28 13:22:50 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Nov 28 14:24:15 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Nov 28 14:48:31 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Nov 28 16:13:03 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Nov 29 14:41:38 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Nov 29 15:43:48 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Nov 29 16:55:08 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
+Nov 30 15:43:48 localhost.localdomain systemd[1]: Started The Apache HTTP Server.
